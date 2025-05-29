@@ -201,7 +201,7 @@ export default function Home() {
                 </p>
 
                 <p className="text-xl font-bold mb-6 text-blue-header">
-                  We don't just build <span className="text-orange-primary">schools</span>—
+                  We don't just build <span className="text-orange-primary">schools</span>
                 </p>
                 <p className="text-lg mb-8 font-semibold text-gray-dark">
                   we build the foundation for <span className="text-orange-primary font-bold">student success</span> and{" "}
