@@ -23,10 +23,9 @@ export default function Home() {
           <div className="decorative-circle circle-1"></div>
           <div className="decorative-circle circle-2"></div>
           <div className="decorative-circle circle-3"></div>
-
           {/* Background Video/Image */}
           <VideoBackground
-            videoSrc="/school-construction.mp4"
+            videoSrc="/vacs vid.mp4"
             fallbackImageSrc="/images/hero-classroom.png"
             fallbackImageAlt="Children studying in a bright classroom setting"
             overlayOpacity={0.6}
@@ -34,7 +33,7 @@ export default function Home() {
 
           {/* Hero Card - Lower Left Position */}
           <div className="hero-card">
-            <h1 className="mb-4">
+            <h1 className="mb-3">
               <span className="title-building">Building </span>
               <span className="title-dreams">dreams</span>
               <span className="title-rest">, one school at a time</span>
@@ -43,7 +42,7 @@ export default function Home() {
             {/* Orange underline decoration */}
             <div className="orange-underline"></div>
 
-            <p className="text-lg text-gray-dark mb-6 leading-relaxed font-medium">
+            <p className="text-lg text-gray-dark mb-0 font-medium">
               We partner with charter schools to create inspiring learning spaces. Since 2006, we've handled every
               step—from finding the perfect site to managing construction—so educators can focus on what matters most:
               <span className="highlight-orange"> their students</span>.
@@ -87,7 +86,7 @@ export default function Home() {
               <Card className="bg-white rounded-card shadow-card card-hover overflow-hidden border-t-4 border-blue-accent loading">
                 <div className="p-8">
                   <div
-                    className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                    className="w-16 h-16 rounded-card flex items-center justify-center mb-6"
                     style={{ background: "linear-gradient(135deg, #5B8BA3 0%, #7BA4BD 50%, #C8DAE6 100%)" }}
                   >
                     <BuildingIcon className="w-8 h-8 text-white" />
@@ -111,7 +110,7 @@ export default function Home() {
               <Card className="bg-white rounded-card shadow-card card-hover overflow-hidden border-t-4 border-orange-primary loading">
                 <div className="p-8">
                   <div
-                    className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                    className="w-16 h-16 rounded-card flex items-center justify-center mb-6"
                     style={{ background: "linear-gradient(45deg, #E67E45, #F4A574)" }}
                   >
                     <BookOpenIcon className="w-8 h-8 text-white" />
@@ -132,10 +131,10 @@ export default function Home() {
                 </div>
               </Card>
 
-              <Card className="bg-white rounded-card shadow-card card-hover overflow-hidden border-t-4 border-blue-accent loading">
+              <Card className="bg-white rounded-card shadow-card overflow-hidden border-t-4 border-blue-accent loading">
                 <div className="p-8">
                   <div
-                    className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
+                    className="w-16 h-16 rounded-card flex items-center justify-center mb-6"
                     style={{ background: "linear-gradient(135deg, #5B8BA3 0%, #7BA4BD 50%, #C8DAE6 100%)" }}
                   >
                     <HomeIcon className="w-8 h-8 text-white" />
@@ -178,7 +177,7 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="rounded-card overflow-hidden shadow-card">
                 <Image
-                  src="/images/vacss.jpg"
+                  src="/images/Pictures/School Design 2.jpg"
                   alt="Students engaged in collaborative learning"
                   width={600}
                   height={400}
@@ -201,7 +200,7 @@ export default function Home() {
                 </p>
 
                 <p className="text-xl font-bold mb-6 text-blue-header">
-                  We don't just build <span className="text-orange-primary">schools</span>
+                  We don't just build schools
                 </p>
                 <p className="text-lg mb-8 font-semibold text-gray-dark">
                   we build the foundation for <span className="text-orange-primary font-bold">student success</span> and{" "}
@@ -280,7 +279,8 @@ export default function Home() {
 
               <Card className="rounded-card shadow-card bg-white">
                 <div className="p-8 md:p-10">
-                  <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4uGQfKDwbziCCagvXDSox8wKtNfkp4XnLrU-SFzuhZHsBsw/viewform?embedded=true" width="640" height="381" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+                  {/* <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <Input
                         placeholder="First Name"
@@ -322,8 +322,8 @@ export default function Home() {
                         Submit
                       </Button>
                     </div>
-                  </form>
-                </div>
+                  </form>*/}
+                </div> 
               </Card>
             </div>
           </div>

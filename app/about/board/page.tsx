@@ -2,12 +2,17 @@ import Image from "next/image"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Users } from "lucide-react"
-
+import HeroHeader from "@/components/hero-header"
 export default function BoardPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-
+      <HeroHeader 
+                    src="/images/Pictures/School Design.jpg"
+                    alt="school buildings"
+                    headText="The Board"
+                    subtext="Explore our completed projects and see how we've helped charter schools across the country create inspiring
+                        learning environments."/>
       {/* Board Content */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -23,7 +28,7 @@ export default function BoardPage() {
 
             {/* Main Board Description Box */}
             <div
-              className="rounded-lg p-8 md:p-12 mb-12 relative overflow-hidden"
+              className="rounded-card p-8 md:p-12 mb-12 relative overflow-hidden"
               style={{ background: "linear-gradient(135deg, #5B8BA3 0%, #4A7B8C 100%)" }}
             >
               <div className="flex flex-col md:flex-row items-start gap-8">
@@ -64,7 +69,7 @@ export default function BoardPage() {
             <div className="mb-16">
               <h2 className="text-3xl font-semibold mb-8 text-blue-header text-center">Leadership</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="bg-white rounded-lg shadow-sm p-8">
+                <div className="bg-white rounded-card shadow-sm p-8">
                   <div className="flex flex-col items-center">
                     <div className="w-40 h-40 rounded-full overflow-hidden mb-6">
                       <Image
@@ -85,7 +90,7 @@ export default function BoardPage() {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-lg shadow-sm p-8">
+                <div className="bg-white rounded-card shadow-sm p-8">
                   <div className="flex flex-col items-center">
                     <div className="w-40 h-40 rounded-full overflow-hidden mb-6">
                       <Image
@@ -112,15 +117,15 @@ export default function BoardPage() {
             <div className="mb-16">
               <h2 className="text-3xl font-semibold mb-8 text-center text-blue-header">Our Impact</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+                <div className="bg-white p-6 rounded-card shadow-sm text-center">
                   <div className="text-4xl font-bold text-orange-primary mb-2">1M+</div>
                   <div className="text-gray-700">Square feet of learning space</div>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+                <div className="bg-white p-6 rounded-card shadow-sm text-center">
                   <div className="text-4xl font-bold text-orange-primary mb-2">10,000+</div>
                   <div className="text-gray-700">Students served</div>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+                <div className="bg-white p-6 rounded-card shadow-sm text-center">
                   <div className="text-4xl font-bold text-orange-primary mb-2">100s</div>
                   <div className="text-gray-700">Jobs created</div>
                 </div>
@@ -128,14 +133,14 @@ export default function BoardPage() {
             </div>
 
             {/* Support Our Mission */}
-            <div className="bg-white rounded-lg p-8 text-center">
+            <div className="bg-white rounded-card p-8 text-center">
               <h2 className="text-2xl font-semibold mb-6 text-blue-header">Support Our Mission</h2>
               <p className="text-gray-700 mb-6">
                 Dream Schools is a 501(c)(3) nonprofit organization. Your donation is tax-deductible to the extent
                 allowed by law.
               </p>
               <button
-                className="px-8 py-3 text-white font-medium rounded-md"
+                className="px-8 py-3 text-white font-medium rounded-card"
                 style={{ background: "linear-gradient(45deg, #E67E45, #F4A574)" }}
               >
                 Donate Today

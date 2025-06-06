@@ -1,12 +1,19 @@
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import GradientLine from "@/components/gradient-line"
 import { Target, FileText, TrendingUp } from "lucide-react"
+import HeroHeader from "@/components/hero-header"
 
 export default function MissionPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-
+      <HeroHeader 
+              src="/images/Pictures/schoolgirl-with-notebook-her-hands-sunset-background-school-goes-school.jpg"
+              alt="school buildings"
+              headText="Our Mission"
+              subtext="Explore our completed projects and see how we've helped charter schools across the country create inspiring
+                  learning environments."/>
       {/* Mission Content */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -14,8 +21,11 @@ export default function MissionPage() {
             {/* Mission Statement */}
             <div>
               <h2 className="text-2xl font-bold mb-2 text-gray-800">Mission Statement</h2>
+              {/* </GradientLine> */}
               <p className="text-gray-600 mb-4">One school at a time~</p>
-              <div className="rounded-lg p-8 flex gap-6" style={{ background: "#4A6B7C" }}>
+              <GradientLine c1="#5B8BA3" c2="#E67E45" />
+              
+              <div className="rounded-card p-8 flex gap-6" style={{ background: "#4A6B7C"}}>
                 <div className="flex-shrink-0">
                   <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
                     <Target className="w-10 h-10 text-white" />
@@ -35,7 +45,8 @@ export default function MissionPage() {
             <div>
               <h2 className="text-2xl font-bold mb-2 text-gray-800">Our Story</h2>
               <p className="text-gray-600 mb-4">Building schools, strengthening communities~</p>
-              <div className="rounded-lg p-8 flex gap-6" style={{ background: "#4A6B7C" }}>
+              <GradientLine c1="#5B8BA3" c2="#E67E45" />
+              <div className="rounded-card p-8 flex gap-6" style={{ background: "#4A6B7C" }}>
                 <div className="flex-shrink-0">
                   <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
                     <FileText className="w-10 h-10 text-white" />
@@ -63,7 +74,9 @@ export default function MissionPage() {
                 Dream Schools supports public charter schools in meeting their facility needs by providing access to
                 affordable, sustainable, high-quality learning environments that empower student success.
               </p>
-              <div className="rounded-lg p-8 flex gap-6" style={{ background: "#4A6B7C" }}>
+              <GradientLine c1="#5B8BA3" c2="#E67E45" />
+              
+              <div className="rounded-card p-8 flex gap-6" style={{ background: "#4A6B7C" }}>
                 <div className="flex-shrink-0">
                   <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
                     <TrendingUp className="w-10 h-10 text-white" />

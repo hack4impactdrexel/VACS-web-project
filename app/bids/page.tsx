@@ -1,24 +1,22 @@
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
+import HeroHeader from "@/components/hero-header"
 
 export default function BidsPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-
       {/* Bids Header */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-6">Current Bids & RFPs</h1>
-            <p className="text-xl text-gray-700 mb-8">
-              Dream Schools is committed to fair and transparent procurement processes. Below you'll find our current
-              open bids and requests for proposals.
-            </p>
-          </div>
-        </div>
-      </section>
+      
+      <HeroHeader
+        src="/images/Pictures/large-modern-office-building.jpg"
+        alt=""
+        headText="Current Bids & RFPs"
+        subtext="Dream Schools is committed to fair and transparent procurement processes. Below you'll find our current
+              open bids and requests for proposals."
+      />
+      
 
       {/* Current Bids */}
       <section className="py-8 bg-gray-50">
@@ -39,14 +37,14 @@ export default function BidsPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button
-                  className="text-white font-medium"
+                  className="text-white font-medium rounded-card"
                   style={{ background: "linear-gradient(45deg, #E67E45, #F4A574)" }}
                 >
                   Download RFP
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-orange-primary text-orange-primary hover:bg-orange-primary hover:text-white"
+                  className="rounded-card border-orange-primary text-orange-primary hover:bg-orange-primary hover:text-white"
                 >
                   Submit Proposal
                 </Button>
@@ -66,14 +64,14 @@ export default function BidsPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button
-                  className="text-white font-medium"
+                  className="rounded-card text-white font-medium"
                   style={{ background: "linear-gradient(45deg, #E67E45, #F4A574)" }}
                 >
                   Download RFP
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-orange-primary text-orange-primary hover:bg-orange-primary hover:text-white"
+                  className="border-orange-primary text-orange-primary hover:bg-orange-primary hover:text-white rounded-card"
                 >
                   Submit Proposal
                 </Button>
@@ -93,14 +91,14 @@ export default function BidsPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button
-                  className="text-white font-medium"
+                  className="rounded-card text-white font-medium"
                   style={{ background: "linear-gradient(45deg, #E67E45, #F4A574)" }}
                 >
                   Download RFP
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-orange-primary text-orange-primary hover:bg-orange-primary hover:text-white"
+                  className="rounded-card border-orange-primary text-orange-primary hover:bg-orange-primary hover:text-white"
                 >
                   Submit Proposal
                 </Button>

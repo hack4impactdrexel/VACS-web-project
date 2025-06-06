@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import HeroHeader from "@/components/hero-header"
 
 export default function PortfoliosPage() {
   return (
@@ -8,7 +9,7 @@ export default function PortfoliosPage() {
       <Navbar />
 
       {/* Portfolios Header */}
-      <section className="relative">
+      {/* <section className="relative">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/02eqjpg.jpg"
@@ -25,8 +26,13 @@ export default function PortfoliosPage() {
             learning environments.
           </p>
         </div>
-      </section>
-
+      </section> */}
+      <HeroHeader 
+        src="/images/02eqjpg.jpg"
+        alt="school buildings"
+        headText="Our Portfolio"
+        subtext="Explore our completed projects and see how we've helped charter schools across the country create inspiring
+            learning environments."/>
       {/* Filtering Options
       <section className="py-8 bg-white border-b border-gray-medium">
         <div className="container mx-auto px-4">
@@ -218,19 +224,19 @@ export default function PortfoliosPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-12">Our Impact</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="bg-white p-6 rounded-card shadow-sm text-center">
               <div className="text-4xl font-bold text-orange-primary mb-2">25+</div>
               <div className="text-gray-700">Projects Completed</div>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="bg-white p-6 rounded-card shadow-sm">
               <div className="text-4xl font-bold text-orange-primary mb-2">1M+</div>
               <div className="text-gray-700">Square Feet Developed</div>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="bg-white p-6 rounded-card shadow-sm">
               <div className="text-4xl font-bold text-orange-primary mb-2">10K+</div>
               <div className="text-gray-700">Students Served</div>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="bg-white p-6 rounded-card shadow-sm">
               <div className="text-4xl font-bold text-orange-primary mb-2">12</div>
               <div className="text-gray-700">States</div>
             </div>

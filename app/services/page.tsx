@@ -1,12 +1,18 @@
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Search, Users, PenToolIcon as Tool, DollarSign } from "lucide-react"
-
+import HeroHeader from "@/components/hero-header"
+import GradientLine from "@/components/gradient-line"
 export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-
+      <HeroHeader 
+              src="images/Pictures/teacher-students-walking-around-school-campus-stock-photo.jpg"
+              alt="school buildings"
+              headText="What We Do"
+              subtext="Explore our completed projects and see how we've helped charter schools across the country create inspiring
+                  learning environments."/>
       {/* Services Content */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -19,7 +25,8 @@ export default function ServicesPage() {
             {/* Real Estate Development */}
             <div>
               <h2 className="text-2xl font-bold mb-4 text-gray-700">Real Estate Development</h2>
-              <div className="rounded-lg p-8 flex gap-6" style={{ background: "#4A6B7C" }}>
+              <GradientLine c1="#5B8BA3" c2="#E67E45" />
+              <div className="rounded-card p-8 flex gap-6" style={{ background: "#4A6B7C" }}>
                 <div className="flex-shrink-0">
                   <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
                     <Search className="w-10 h-10 text-white" />
@@ -38,7 +45,8 @@ export default function ServicesPage() {
             {/* Project Management */}
             <div>
               <h2 className="text-2xl font-bold mb-4 text-gray-700">Project Management</h2>
-              <div className="rounded-lg p-8 flex gap-6" style={{ background: "#4A6B7C" }}>
+              <GradientLine c1="#5B8BA3" c2="#E67E45" />
+              <div className="rounded-card p-8 flex gap-6" style={{ background: "#4A6B7C" }}>
                 <div className="flex-shrink-0">
                   <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
                     <Users className="w-10 h-10 text-white" />
@@ -57,7 +65,8 @@ export default function ServicesPage() {
             {/* Renovations & Upgrades */}
             <div>
               <h2 className="text-2xl font-bold mb-4 text-gray-700">Renovations & Upgrades</h2>
-              <div className="rounded-lg p-8 flex gap-6" style={{ background: "#4A6B7C" }}>
+              <GradientLine c1="#5B8BA3" c2="#E67E45" />
+              <div className="rounded-card p-8 flex gap-6" style={{ background: "#4A6B7C" }}>
                 <div className="flex-shrink-0">
                   <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
                     <Tool className="w-10 h-10 text-white" />
@@ -76,7 +85,8 @@ export default function ServicesPage() {
             {/* Lease-to-Purchase Financing */}
             <div>
               <h2 className="text-2xl font-bold mb-4 text-gray-700">Lease-to-Purchase Financing</h2>
-              <div className="rounded-lg p-8 flex gap-6" style={{ background: "#4A6B7C" }}>
+              <GradientLine c1="#5B8BA3" c2="#E67E45" />
+              <div className="rounded-card p-8 flex gap-6" style={{ background: "#4A6B7C" }}>
                 <div className="flex-shrink-0">
                   <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
                     <DollarSign className="w-10 h-10 text-white" />

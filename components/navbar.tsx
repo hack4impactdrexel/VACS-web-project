@@ -6,6 +6,8 @@ import { Menu, X, ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import GradientLine from "./gradient-line"
+import { Button } from "react-day-picker"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -34,17 +36,17 @@ export default function Navbar() {
         "sticky top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled ? "shadow-lg py-2" : "py-4",
       )}
-      style={{ background: "#5B8BA3" }}
+      style={{background: "#5B8BA3",
+        background: "linear-gradient(90deg,rgba(91, 139, 163, 1) 0%, rgba(31, 68, 97, 1) 100%)"}}
     >
-      <div className="flex items-center justify-between w-full max-w-6xl mx-auto">
-        <div className="flex items-center">
-          <Link href="/" className="flex items-center">
-            <span className="text-xl font-bold text-white">Dream Schools</span>
-          </Link>
-        </div>
-
+      <div className="flex items-right w-auto max-w-6xl mx-auto">
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center justify-center flex-1 space-x-12">
+        <nav className="hidden md:flex items- justify-right flex-1 space-x-6">
+          <GradientLine/>{/* I (chi) put this here just to separate dreamschools from edge of nav */}
+          <Link href="/" className="flex items-left">
+            <span className="text-xl font-bold text-white">Dream Schools</span>
+  
+          </Link>
           <Link
             href="/"
             className={cn(
@@ -66,7 +68,10 @@ export default function Navbar() {
             >
               ABOUT US <ChevronDown className="ml-1 h-4 w-4" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent>
+            <DropdownMenuContent className={cn(
+                "bg-white rounded-card",
+                pathname.includes("/about") ? "bg-white" : "hover:bg-white",
+              )}>
               <DropdownMenuItem>
                 <Link href="/about/mission" className="w-full" scroll={true} onClick={() => window.scrollTo(0, 0)}>
                   Our Mission
@@ -99,6 +104,10 @@ export default function Navbar() {
               </Link>
             )
           })}
+        
+        <div className="flex items-left">
+          
+          </div>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -115,6 +124,10 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 shadow-lg" style={{ background: "#5B8BA3" }}>
           <nav className="flex flex-col space-y-2 px-4 py-4">
+            <Link href="/" className="flex items-left">
+            <span className="text-xl font-bold text-white">Dream Schools</span>
+  
+          </Link>
             <Link
               href="/"
               className="text-white font-semibold tracking-wider text-sm uppercase py-3 px-4 rounded-full hover:bg-white/20 transition-colors"
@@ -166,7 +179,9 @@ export default function Navbar() {
               </Link>
             ))}
           </nav>
+          
         </div>
+        
       )}
     </header>
   )
